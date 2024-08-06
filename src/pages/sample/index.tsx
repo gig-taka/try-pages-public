@@ -15,7 +15,10 @@ export const Sample = () => {
         <li>読み上げる</li>
         <li aria-hidden="true">読み上げない</li>
       </ul>
-      <div aria-label="たらこパスタです。たらこの風味を生かしたシンプルで美味しい料理です。千二百円です">
+      <div
+        role="region"
+        aria-label="たらこパスタです。たらこの風味を生かしたシンプルで美味しい料理です。千二百円です"
+      >
         <div aria-hidden="true">たらこパスタ</div>
         <div aria-hidden="true">1,200円</div>
         <div aria-hidden="true">
