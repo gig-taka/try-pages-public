@@ -20,6 +20,7 @@ export const Sample = () => {
         <div>1,200円</div>
         <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
       </Link>
+      <a href="https://www.yahoo.co.jp">リンク</a>
       <Link href="/">
         <h1 className="text-2xl">戻る</h1>
       </Link>
