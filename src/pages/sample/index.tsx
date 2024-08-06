@@ -6,7 +6,8 @@ export const Sample = () => {
       <Link href="/">
         <h1 className="sm:text-4xl md:text-6xl lg:text-9xl">サンプルページ1</h1>
       </Link>
-      <ul className="my-6">
+      <ul className="my-6 md:text-xl lg:text-2xl">
+        <li>{process.env.BUILD_DATETIME}</li>
         <li className="hidden">display: none</li>
         <li className="invisible">visibility: hidden</li>
         <li>読み上げる</li>
