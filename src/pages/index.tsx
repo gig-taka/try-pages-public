@@ -49,6 +49,11 @@ export default function Home() {
           />
         </Link>
       </div>
+      <div>
+        <Link href="/notfound" className="bg-red-300 p-2">
+          NOT FOUND
+        </Link>
+      </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
