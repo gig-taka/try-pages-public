@@ -3,6 +3,7 @@ import Link from "next/link";
 export const Sample = () => {
   return (
     <div className="flex flex-col justify-center h-[100dvh] items-center md:text-xl lg:text-2xl">
+      <span className="sr-only">このページはtalkbackテストページです</span>
       <Link href="/">
         <h1>サンプルページ1</h1>
       </Link>
@@ -36,7 +37,7 @@ export const Sample = () => {
         <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
       </div>
       <a href="https://www.yahoo.co.jp">リンク</a>
-      <Link href="/" aria-label="トップページに戻ります">
+      <Link href="/" aria-label="トップページにもどります">
         <h1 className="text-2xl">戻る</h1>
       </Link>
     </div>
