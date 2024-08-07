@@ -2,11 +2,19 @@ import Link from "next/link";
 
 export const Sample = () => {
   return (
-    <div className="flex flex-col justify-center bg-gray-800 h-[100dvh] items-center">
+    <div className="flex flex-col justify-center h-[100dvh] items-center md:text-xl lg:text-2xl">
       <Link href="/">
-        <h1 className="sm:text-4xl md:text-6xl lg:text-9xl">サンプルページ1</h1>
+        <h1>サンプルページ1</h1>
       </Link>
-      <ul className="my-6 md:text-xl lg:text-2xl">
+      <h2>箇条書きA</h2>
+      <ol>
+        <li>項目１</li>
+        <li>項目２</li>
+        <li>項目３</li>
+        <li>項目４</li>
+      </ol>
+      <h2>箇条書きB</h2>
+      <ul>
         <li aria-label="デプロイされた時間です">
           {process.env.BUILD_DATETIME}
         </li>
@@ -15,11 +23,18 @@ export const Sample = () => {
         <li>読み上げる</li>
         <li aria-hidden="true">読み上げない</li>
       </ul>
+      <h2>まとめて読み上げる</h2>
       <Link href="/">
         <div>たらこパスタ</div>
         <div>1,200円</div>
         <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
       </Link>
+      <h2>個別に読み上げる</h2>
+      <div>
+        <div>たらこパスタ</div>
+        <div>1,200円</div>
+        <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
+      </div>
       <a href="https://www.yahoo.co.jp">リンク</a>
       <Link href="/">
         <h1 className="text-2xl">戻る</h1>
