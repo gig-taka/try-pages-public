@@ -59,6 +59,7 @@ export const Sample = () => {
           <button
             className="p-2 border rounded-md m-4 bg-blue-300"
             onClick={() => b(false)}
+            aria-label="ダイアログを閉じます"
           >
             閉じる
           </button>
