@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { useState } from "react";
 
 export const Sample = () => {
+  const [a, b] = useState(false);
   return (
     <div className="flex flex-col justify-center h-[100dvh] items-center md:text-xl lg:text-2xl">
       <span className="sr-only">このページはtalkbackテストページです</span>
@@ -37,9 +39,26 @@ export const Sample = () => {
         <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
       </div>
       <a href="https://www.yahoo.co.jp">リンク</a>
+      <button
+        className="p-2 border rounded-md m-4 bg-green-300"
+        onClick={() => b(true)}
+      >
+        ダイアログ
+      </button>
       <Link href="/" aria-label="トップページにもどります">
         <h1 className="text-2xl">戻る</h1>
       </Link>
+      {a && (
+        <div className="fixed left-0 top-0 w-[100dvw] h-[100dvh] bg-blue-200 flex flex-col justify-center items-center md:text-xl lg:text-2xl">
+          <h1>モーダルダイアログ</h1>
+          <button
+            className="p-2 border rounded-md m-4 bg-blue-300"
+            onClick={() => b(false)}
+          >
+            閉じる
+          </button>
+        </div>
+      )}
     </div>
   );
 };
