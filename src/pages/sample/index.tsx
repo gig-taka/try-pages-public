@@ -37,11 +37,11 @@ export const Sample = () => {
           <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
         </Link>
         <h2>個別に読み上げる</h2>
-        <div>
+        <article>
           <div>たらこパスタ</div>
           <div>1,200円</div>
           <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
-        </div>
+        </article>
         <a href="https://www.yahoo.co.jp">リンク</a>
         {!a && (
           <button
