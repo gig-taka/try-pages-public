@@ -8,7 +8,9 @@ const Error404 = () => {
           お探しのページが見つかりません
         </h1>
       </Link>
-      <div className="text-2xl">- 404 -</div>
+      <div aria-hidden={true} className="text-2xl">
+        - 404 -
+      </div>
     </div>
   );
 };
