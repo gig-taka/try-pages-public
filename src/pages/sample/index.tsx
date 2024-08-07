@@ -30,6 +30,18 @@ export const Sample = () => {
           <li>読み上げる</li>
           <li aria-hidden="true">読み上げない</li>
         </ul>
+        <h2>まとめて読み上げる</h2>
+        <Link href="/">
+          <div>たらこパスタ</div>
+          <div>1,200円</div>
+          <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
+        </Link>
+        <h2>個別に読み上げる</h2>
+        <article>
+          <div>たらこパスタ</div>
+          <div>1,200円</div>
+          <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
+        </article>
         <a href="https://www.yahoo.co.jp">リンク</a>
         {!a && (
           <button
@@ -46,18 +58,6 @@ export const Sample = () => {
       {a && (
         <div className="fixed left-0 top-0 w-[100dvw] h-[100svh] bg-blue-200 flex flex-col justify-center items-center md:text-xl lg:text-2xl overflow-auto">
           <h1>モーダルダイアログ</h1>
-          <h2>まとめて読み上げる</h2>
-          <Link href="/">
-            <div>たらこパスタ</div>
-            <div>1,200円</div>
-            <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
-          </Link>
-          <h2>個別に読み上げる</h2>
-          <article>
-            <div>たらこパスタ</div>
-            <div>1,200円</div>
-            <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
-          </article>
           <h2>画像のaltに商品名を入れる</h2>
           <img src="img.jpg" className="w-24" alt="親子丼" />
           <h2>画像のaltに商品説明を入れる</h2>
