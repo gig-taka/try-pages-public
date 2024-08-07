@@ -44,7 +44,7 @@ export const Sample = () => {
         </Link>
       </div>
       {a && (
-        <div className="fixed left-0 top-0 w-[100dvw] h-[100dvh] bg-blue-200 flex flex-col justify-center items-center md:text-xl lg:text-2xl overflow-auto">
+        <div className="fixed left-0 top-0 w-[100dvw] h-[100svh] bg-blue-200 flex flex-col justify-center items-center md:text-xl lg:text-2xl overflow-auto">
           <h1>モーダルダイアログ</h1>
           <h2>まとめて読み上げる</h2>
           <Link href="/">
