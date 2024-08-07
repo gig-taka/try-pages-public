@@ -43,12 +43,14 @@ export const Sample = () => {
           <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
         </div>
         <a href="https://www.yahoo.co.jp">リンク</a>
-        <button
-          className="p-2 border rounded-md m-4 bg-green-300"
-          onClick={() => b(true)}
-        >
-          ダイアログ
-        </button>
+        {!a && (
+          <button
+            className="p-2 border rounded-md m-4 bg-green-300"
+            onClick={() => b(true)}
+          >
+            ダイアログ
+          </button>
+        )}
         <Link href="/" aria-label="トップページにもどります">
           <h1 className="text-2xl">戻る</h1>
         </Link>
