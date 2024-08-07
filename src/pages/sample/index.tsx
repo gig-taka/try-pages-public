@@ -59,17 +59,17 @@ export const Sample = () => {
             <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
           </article>
           <h2>画像のaltに商品名を入れる</h2>
-          <img src="img.jpg" className="w-30" alt="親子丼" />
+          <img src="img.jpg" className="w-24" alt="親子丼" />
           <h2>画像のaltに商品説明を入れる</h2>
           <img
             src="img.jpg"
-            className="w-30"
+            className="w-24"
             alt="親子丼は、柔らかく煮込んだ鶏肉と半熟の卵を甘辛いだしで味付けし、ふっくらとしたご飯の上にのせた日本の伝統的な丼物です。ねぎをアクセントに加え、シンプルながらも深い味わいが楽しめます。栄養バランスも良く、手軽に食べられるため、忙しい日の昼食や夕食にぴったりです。"
           />
           <h2>画像のaltに商品名まとめて読み上げる</h2>
           <Link href="/" className="flex gap-2 h-[300px] justify-center">
             <div className="flex flex-col">
-              <img src="img.jpg" alt="親子丼" className="w-[100px]" />
+              <img src="img.jpg" alt="親子丼" className="w-24" />
               <div>親子丼</div>
               <div>850円</div>
             </div>
