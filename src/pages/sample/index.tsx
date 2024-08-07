@@ -7,7 +7,7 @@ export const Sample = () => {
     <div>
       <div
         aria-hidden={a}
-        className="flex flex-col justify-center h-[100dvh] items-center md:text-xl lg:text-2xl"
+        className="flex flex-col justify-center h-[100dvh] items-center md:text-xl lg:text-2xl overflow-auto"
       >
         <span className="sr-only">このページはtalkbackテストページです</span>
         <Link href="/">
@@ -42,6 +42,19 @@ export const Sample = () => {
           <div>1,200円</div>
           <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
         </article>
+        <h2>画像に商品名を入れる</h2>
+        <img src="img.jpg" className="w-40" alt="親子丼" />
+        <h2>画像に商品名を入れる</h2>
+        <Link href="/" className="flex gap-2 h-[300px] justify-center">
+          <div className="flex flex-col">
+            <img src="img.jpg" alt="親子丼" className="w-[100px]" />
+            <div>親子丼</div>
+            <div>850円</div>
+          </div>
+          <div className="w-[60%]">
+            親子丼は、柔らかく煮込んだ鶏肉と半熟の卵を甘辛いだしで味付けし、ふっくらとしたご飯の上にのせた日本の伝統的な丼物です。ねぎをアクセントに加え、シンプルながらも深い味わいが楽しめます。栄養バランスも良く、手軽に食べられるため、忙しい日の昼食や夕食にぴったりです。
+          </div>
+        </Link>
         <a href="https://www.yahoo.co.jp">リンク</a>
         {!a && (
           <button
