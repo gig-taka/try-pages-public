@@ -6,14 +6,14 @@ export const Sample = () => {
       <Link href="/">
         <h1>サンプルページ1</h1>
       </Link>
-      <h2>箇条書きA</h2>
+      <h2 aria-label="かじょうがきえいです">箇条書きA</h2>
       <ol>
         <li>項目１</li>
         <li>項目２</li>
         <li>項目３</li>
         <li>項目４</li>
       </ol>
-      <h2>箇条書きB</h2>
+      <h2 aria-label="かじょうがきびーです">箇条書きB</h2>
       <ul>
         <li aria-label="デプロイされた時間です">
           {process.env.BUILD_DATETIME}
