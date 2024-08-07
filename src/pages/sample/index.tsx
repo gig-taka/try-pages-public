@@ -36,7 +36,7 @@ export const Sample = () => {
         <div>たらこの風味を生かしたシンプルで美味しい料理です</div>
       </div>
       <a href="https://www.yahoo.co.jp">リンク</a>
-      <Link href="/">
+      <Link href="/" aria-label="トップページに戻ります">
         <h1 className="text-2xl">戻る</h1>
       </Link>
     </div>
