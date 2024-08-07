@@ -77,6 +77,7 @@ export const Sample = () => {
               親子丼は、柔らかく煮込んだ鶏肉と半熟の卵を甘辛いだしで味付けし、ふっくらとしたご飯の上にのせた日本の伝統的な丼物です。ねぎをアクセントに加え、シンプルながらも深い味わいが楽しめます。栄養バランスも良く、手軽に食べられるため、忙しい日の昼食や夕食にぴったりです。
             </div>
           </Link>
+          <span aria-hidden={true}>閉じるに別のテキストを設定</span>
           <button
             className="p-2 border rounded-md m-4 bg-blue-300"
             onClick={() => b(false)}
